@@ -40,9 +40,10 @@ class ApplicationController < Sinatra::Base
     if params[:username] ==""
       redirect "/failure"
     else 
+      erb :account 
+    end 
+  end 
    
-  end
-  
   get "/failure" do
     erb :failure
   end
